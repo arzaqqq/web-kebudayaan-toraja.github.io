@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(253,246,224);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 10%;
+  background-color: rgb(253,246,224);
+  /* box-shadow: 0 0 10px rgba(2, 2, 2, 0.5); */
+  position: fixed;
+  height: 15vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9997;
+}
+
+header .logo {
+  display: flex;
+
+}
+
+header .logo img {
+  width: 5rem;
+  height: 4rem;
+}
+
+header .logo .logo-text {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header .logo .logo-text #satu{
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header .logo .logo-text a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+header .navbar a {
+  display: inline-block;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header .navbar a:hover {
+  color: rgb(148, 36, 36);
+}
+
+header .navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid rgb(8, 8, 8);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+header .navbar a:hover::after {
+  transform: scaleX(0.7);
+}
+
+/** Beranda */
+.beranda {
+  display: flex;
+  padding: 4rem 11rem 0 5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/img/tongkonan.png);
+  background-repeat: no-repeat;
+  background-position: 47vh;
+  background-position-y: 12.3rem;
+  background-size: 18rem;
+}
+
+.beranda img {
+  width: 26rem;
+}
+
+.beranda h1 {
+  font-size: 3.7rem;
+  font-family: 'Courgette', cursive;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: rgb(214, 75, 21);
+}
+
+.beranda h2 {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.antara {
+  height: 2rem;
+  background-image: url(/img/ukirantoraja.jpg);
+  background-size: 9rem;
+  box-shadow: 0 0 10px rgba(8, 8, 8, 0.7);
+  opacity: 0.8;
+}
+
+/** Profil */
+.profil {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 17% 0 17%;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.74); */
+}
+
+.profil h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: rgb(214, 75, 21);
+}
+
+.profil p {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.profil .tongkonan {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.74); */
+}
+
+.profil .tongkonan .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profil .tongkonan .container .row h2 {
+  margin-bottom: 0.5rem;
+  font-family: 'Kalam', cursive;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+
+.profil .tongkonan .container .row p {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.profil .tongkonan .container img {
+  width: 23rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+}
+
+.profil .tongkonan .container-dua {
+  display: flex;
+  margin-top: 6rem;
+}
+
+.profil .tongkonan .container-dua img {
+  margin-right: 1.5rem;
+  width: 25rem;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.profil .tongkonan .container-dua h2 {
+  font-family: 'Kalam', cursive;
+}
+
+/** Galeri */
+.galeri {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 13% 0 13%;
+}
+
+.galeri h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: rgb(214, 75, 21);
+}
+
+.galeri p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.692);
+  margin-bottom: 3rem;
+}
+
+.galeri .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galeri .container .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18rem;
+}
+
+.galeri .container .row img {
+  width: 18rem;
+  height: 25rem;
+  border-radius: 15px;
+  /* border: 2px solid; */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.galeri .container .row h3 {
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.842);
+}
+
+.galeri .container .row p {
+  text-align: justify;
+}
+
+
+/** destinasi */
+.destinasi {
+  padding: 6rem 11% 0 12%;
+}
+
+.destinasi h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: rgb(214, 75, 21);
+}
+
+.destinasi .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.destinasi .container .card {
+  width: 20rem;
+  height: 25rem;
+  background-color: rgb(169,115,68);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.692);
+  border-radius: 10px;
+  margin: 0 0 3rem 0;
+}
+
+.destinasi .container .card img {
+  width: 20rem;
+  height: 18rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.destinasi .container .card h2 {
+  color: antiquewhite;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.6rem;
+}
+
+.destinasi .container .card p {
+  padding: 0 0.4rem 0 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.842);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+/** Footer */
+footer {
+  background-color: rgb(169,115,68);
+  text-align: center;
+  padding: 2rem 0 2rem;
+  margin-top: 3rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit p {
+  color: white;
+  font-weight: 700;
+}
